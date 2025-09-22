@@ -1,3 +1,4 @@
+
 * {
     padding: 0;
     margin: 0;
@@ -78,8 +79,8 @@ header div {
     font-weight: bold;
 
 }
-
-.transparente:hover {
+.botao_roxo:hover {
+    background-color: #3437a0;
     transition: 0.2s;
     background-color: #4851D5;
     color: white;
@@ -89,7 +90,7 @@ header div {
     background-color: #3437a0;
     transition: 0.2s;
     color: white;
-}
+
 
 .logo {
     width: 300px;
@@ -177,6 +178,7 @@ nav a:hover::after {
     width: 100%;
 }
 /* Estilização da navbar */
+
 
 
 /* Estilização da index.html */
@@ -349,3 +351,4 @@ nav a:hover::after {
     font-weight: 200;
 }
 /* Estilização da index.html */
+
