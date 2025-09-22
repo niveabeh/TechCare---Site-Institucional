@@ -325,7 +325,7 @@ nav a:hover::after {
     justify-content: space-between;
     min-width: 412px;
     width: 22vw;
-    height: 42vh;
+    height: 55vh;
     border: 1px solid #C0C0BD80;
     border-radius: 16px;
     background-color: #F3F3FF;
@@ -351,5 +351,13 @@ nav a:hover::after {
 .elemento button{
     font-size: 20px;
     font-weight: 200;
+}
+.container1_subdiv3{
+    height: 90vh;
+    width: 100%;
+    padding: 40px;
+    border-radius: 32px;
+    background-color: #4851D5E0;
+    background-image: url('../img/background-segunda-secao-home.jpg');
 }
 /* Estilização da index.html */
