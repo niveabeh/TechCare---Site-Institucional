@@ -17,10 +17,12 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 /* Estilização da navbar */
 header {
+    backdrop-filter: blur(5px);
     position: fixed;
     z-index: 1;
     min-width: fit-content;
@@ -60,7 +62,7 @@ header div {
     cursor: pointer;
 }
 
-.cadastro {
+.transparente {
     background-color: transparent !important;
     color: #4851D5 !important;
     border: 2px solid #4851D5 !important;
@@ -68,13 +70,13 @@ header div {
 
 }
 
-.consulta:hover {
+.botao_roxo:hover {
     background-color: #3437a0;
     transition: 0.2s;
     color: white;
 }
 
-.cadastro:hover {
+.transparente:hover {
     transition: 0.2s !important;
     background-color: #4851D5 !important;
     color: white !important;
