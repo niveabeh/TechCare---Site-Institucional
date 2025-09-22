@@ -93,7 +93,7 @@ header div {
     transition: 0.2s;
     color: white;
 
-
+}
 
 .logo {
     width: 300px;
@@ -356,5 +356,3 @@ nav a:hover::after {
     font-size: 20px;
     font-weight: 200;
 }
-/* Estilização da index.html */
-
