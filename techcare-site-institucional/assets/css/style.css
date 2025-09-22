@@ -50,6 +50,7 @@ header div {
     width: 430px;
 }
 
+
 .botao {
     font-size: 15px;
     min-width: 200px;
@@ -73,6 +74,7 @@ header div {
 }
 
 .transparente {
+
     background-color: transparent;
     color: #4851D5;
     border: 2px solid #4851D5;
@@ -90,6 +92,7 @@ header div {
     background-color: #3437a0;
     transition: 0.2s;
     color: white;
+
 
 
 .logo {
@@ -120,6 +123,7 @@ header div {
     letter-spacing: 2px;
 }
 
+
 .menu_button img {
     display: flex;
     align-items: center;
@@ -130,6 +134,7 @@ header div {
 .menu_button img:hover {
     transform: rotate(180deg) scale(1.1);
 }
+
 
 .logo_desc h4 {
     font-size: 15px;
@@ -178,6 +183,7 @@ nav a:hover::after {
     width: 100%;
 }
 /* Estilização da navbar */
+
 
 
 
