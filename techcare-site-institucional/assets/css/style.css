@@ -16,7 +16,8 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     overflow-x: hidden;
 }
 
@@ -353,11 +354,40 @@ nav a:hover::after {
     font-weight: 200;
 }
 .container1_subdiv3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     height: 90vh;
     width: 100%;
     padding: 40px;
     border-radius: 32px;
     background-color: #4851D5E0;
-    background-image: url('../img/background-segunda-secao-home.jpg');
+    
+}
+.container1_subdiv3 h1{
+    color: #FFFFFF;
+    letter-spacing: 5%;
+    font-size: 42px;
+    font-weight: bold;
+}
+.container1_subdiv3 h2{
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 /* Estilização da index.html */
+
+/* Estilização footer */
+footer{
+    width: 100%;
+    height: 30vw;
+    background-color: #4851D5F2;
+}
