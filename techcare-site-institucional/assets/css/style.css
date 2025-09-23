@@ -59,7 +59,8 @@ body {
 }
 
 
-.banner_text h2 {
+.banner_desc {
+    font-size: 20px;
     width: 80%;
     color: #7A7A7A;
     font-weight: lighter;
@@ -112,6 +113,7 @@ body {
 }
 
 .subtitulo {
+    font-size: 28px;
     margin-left: 5px;
     letter-spacing: 4px;
     font-weight: lighter;
@@ -279,7 +281,7 @@ h1 {
 
 .titulo {
     display: inline;
-    font-size: 32px;
+    font-size: 58px;
     font-weight: bold;
 }
 
