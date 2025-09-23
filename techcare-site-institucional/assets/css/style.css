@@ -410,14 +410,13 @@ h1 {
     /* Responsivo */
 }
 
-.texto {
-    margin-left: 40px;
-}
 
 .texto p {
     text-indent: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
     color: #0E0E25;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 
 .img-sobre {
@@ -508,4 +507,7 @@ button:hover,
 
 .botao-sobre {
     margin: 0 20px;
+}
+h2{
+    text-indent: 30px;
 }
