@@ -258,6 +258,7 @@ nav a:hover::after {
     background-repeat: no-repeat;
     background-position: center;
 }
+
 /* Estilização da navbar */
 
 /* Estilização da index.html */
@@ -292,7 +293,7 @@ nav a:hover::after {
 .titulo {
     width: 80%;
     line-height: 1.5;
-    font-weight: bold ;
+    font-weight: bold;
     font-size: 60px;
     color: #0E0E25;
 }
@@ -339,7 +340,7 @@ nav a:hover::after {
     padding: 0px 2%;
     width: 100%;
     height: fit-content;
-    
+
 }
 
 .titulo2 {
@@ -356,6 +357,7 @@ nav a:hover::after {
     font-weight: lighter;
     color: #4851D5;
 }
+
 /* 
 .container1_subdiv2 {
     display: flex;
@@ -409,10 +411,12 @@ nav a:hover::after {
     box-shadow: 0px 0px 15px #0000001F;
 
 }
-.elemento img{
+
+.elemento img {
     width: 120px;
 }
-.elemento p{
+
+.elemento p {
     text-align: center;
     line-height: 1.5;
     color: #7A7A7A;
@@ -420,12 +424,14 @@ nav a:hover::after {
     font-weight: bold;
     font-size: 16px;
 }
-.elemento h1{
-    color:#0E0E25;
+
+.elemento h1 {
+    color: #0E0E25;
     text-align: center;
     font-size: 20px;
 }
-.elemento button{
+
+.elemento button {
     font-size: 20px;
     font-weight: 200;
 }
@@ -555,4 +561,4 @@ footer{
 .copyright{
     color: #FFFFFF;
 }
-/* Estilização footer */
+
