@@ -181,6 +181,19 @@ nav a::after {
 
 nav a:hover::after {
     width: 100%;
+
+}
+
+.hero-sub-pagina{
+    width: 100% ;
+
+}
+.img-hero-pagina{
+    width: 100% ;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 /* Estilização da navbar */
 
