@@ -435,130 +435,156 @@ nav a:hover::after {
     font-size: 20px;
     font-weight: 200;
 }
-.container1_subdiv3{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 90vh;
-    width: 100%;
-    padding: 40px;
-    border-radius: 32px;
-    background-color: #4851D5E0;
-    
-}
-.container1_subdiv3 h1{
-    color: #FFFFFF;
-    letter-spacing: 5%;
-    font-size: 42px;
-    font-weight: bold;
-}
-.container1_subdiv3 h2{
-    color: #FFFFFF;
-    letter-spacing: 2px;
-    font-size: 20px;
-    font-weight: lighter;
-}
-.descricao {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
+
 /* Estilização da index.html */
 
-/* Estilização footer */
-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 48vh;
-    gap: 15px;
-    background-color: #4851D5F2;
-    
+/* Richard inico html */
+/* -------------------------
+     ELEMENTOS GERAIS
+  ------------------------- */
+.bodySobre {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FAF9FF;
+    color: #0E0E25;
+    padding: 40px;
+    line-height: 1.6;
 }
-.footer_subdiv1{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    align-items: center;
-    width: 70%;
-    height: 80%;
-    border-bottom: 1px solid #FFFFFFB2;
-    
-}
-.footer_subdiv1 p{
-    display: flex;
-    align-items: center;
-    
-    width: 90%;
-    color: #FFFFFFCC;
-}
-.footer_element{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 20%;
-    height: 80%;
-}
-.redes{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-.footer_logo{
-    gap: 15px;
-}
-.footer_logo img{
-    width: 70px;
-}
-.footer_logo .footer_title{
-    font-family: monospace;
-    font-size: 32px;
-    letter-spacing: 2px;
-    color: #FFFFFF;
-}
-.techcare_div{
-    width: 25%;
-    margin-right: 50px;
-}
-.techcare_div .footer_logo{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 30%;
-}
-.techcare_div a{
-    text-decoration: none;
-    width: 100%;
-}
-.footer_title2{
-    font-size: 20px;
-    color: #FFFFFF;
 
+h1 {
+    font-size: 70px;
 }
-.footer_desc{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 18px;
-    width: 100%;
-    height: 100%;
-}
-.footer_section2{
-    display: flex;
+
+/* -------------------------
+     CABEÇALHO
+  ------------------------- */
+.cabecalho {
     margin-bottom: 20px;
-    justify-content: space-between;
-    width: 100%;
-    height: 70%;
-}
-.copyright{
-    color: #FFFFFF;
 }
 
+.aspas {
+    display: inline;
+    font-size: 40px;
+    color: #4851D5;
+    margin-right: 10px;
+}
+
+.titulo {
+    display: inline;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* -------------------------
+     SEÇÃO DE CONTEÚDO
+  ------------------------- */
+.conteudo-sobre {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 200px;
+    flex-wrap: wrap;
+    /* Responsivo */
+}
+
+
+.texto p {
+    text-indent: 30px;
+    margin-bottom: 40px;
+    color: #0E0E25;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.img-sobre {
+    width: 550px;
+    max-width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    margin-right: 100px;
+    box-shadow: 0 4px 10px rgba(122, 122, 122, 0.2);
+    /* sombra suave */
+}
+
+/* Subtítulo */
+.sobre-clinica {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* -------------------------
+     FORMULÁRIO
+  ------------------------- */
+.form-area {
+    border: 2px solid #999EE4;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #F3F3FF;
+    margin-top: 30px;
+    max-width: 500px;
+}
+
+.forms-sobre {
+    font-size: 35px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 15px 90px;
+    background-color: #4851D5;
+    border-radius: 5px;
+    margin: 200px auto 5px auto;
+    text-align: center;
+    width: fit-content;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Campo de e-mail */
+input[type="email"],
+.espaco-email {
+    display: inline-block;
+    padding: 10px;
+    width: 250px;
+    margin-right: 10px;
+    margin-left: 5px;
+    border: 1px solid #999EE4;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #0E0E25;
+}
+
+/* -------------------------
+     BOTÕES
+  ------------------------- */
+button,
+.botao-sobre {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #212155;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover,
+.botao-sobre:hover {
+    background-color: #999EE4;
+    color: #0E0E25;
+}
+
+.botao-sobre {
+    margin: 0 20px;
+}
+h2{
+    text-indent: 30px;
+}
