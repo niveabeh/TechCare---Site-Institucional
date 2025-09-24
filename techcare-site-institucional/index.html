@@ -1,14 +1,190 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="img/svg" href="assets/img/Logo-site-azul.svg">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header_footer.css">
     <title>TechCare</title>
 </head>
-<body>
-    
+
+
+<body class="bodyindex">
+    <!-- header da página -->
+    <header>
+        <div class="logo">
+            <a class="menu_button" href="index.html"><img src="assets/img/Logo-site-azul.svg" alt="TechCare"></a>
+            <div class="logo_desc">
+                <h1>TechCare</h1>
+                <h4>Agende fácil, cuide melhor.</h4>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <nav>
+                <a href="index.html">INÍCIO</a>
+                <a href="sobre.html">SOBRE</a>
+                <a href="contato.html">CONTATO</a>
+            </nav>
+        </div>
+        <div class="header_botoes">
+
+            <button class="botao_roxo botao">Marcar Consulta</button>
+            <button class="transparente botao">Cadastrar Clínica</button>
+
+        </div>
+    </header>
+    <!-- header da página -->
+
+    <div class="container_meio">
+        <div class="banner">
+
+            <div class="banner_text">
+                <p class="subtitulo">Conectando Você ao Seu Cuidado</p>
+                <p class="titulo">Cuidar Da Saúde Ficou Mais Simples</p>
+                <p class="banner_desc">TechCare+ conecta pacientes e clínicas em uma plataforma rápida e acessível para
+                    agendar consultas,
+                    receber lembretes e manter seu prontuário em dia.</p>
+                <div class="banner_button">
+                    <button class="botao_roxo botao">Sou paciente</button>
+                    <button class="transparente botao">Sou Clínica</button>
+                </div>
+            </div>
+
+            <img src="assets/img/Image-hero-inicio-medico.png" alt="Médico">
+
+        </div>
+        <div class="container1">
+            <div class="container1_subdiv1">
+                <h1 class="subtitulo">nossos serviços</h1>
+                <h1 class="titulo2">Consultas a poucos cliques de distância.</h1>
+            </div>
+            <div class="container1_subdiv2">
+                <div class="elemento">
+                    <img src="assets/img/icone-prontuario.svg" alt="TechCare">
+
+                    <div class="desc_elemento">
+                        <h1>Prontuário Eletrônico de Dados</h1>
+                        <p>Acesse seu histórico médico de forma segura e organizada.</p>
+                    </div>
+
+                    <button class="botao_roxo botao">Começar Agora</button>
+                </div>
+
+                <div class="elemento">
+                    <img src="assets/img/icone-prontuario.svg" alt="TechCare">
+
+                    <div class="desc_elemento">
+                        <h1>Agendamento Online</h1>
+                        <p>configure horários, profissionais e especialidades de forma simples e rápida.</p>
+                    </div>
+
+                    <button class="botao_roxo botao">Agende A Sua Consulta</button>
+                </div>
+
+                <div class="elemento">
+                    <img src="assets/img/icone-prontuario.svg" alt="TechCare">
+
+                    <div class="desc_elemento">
+                        <h1>Gestão de Consultas</h1>
+                        <p>Organize, reagende ou cancele seus compromissos sem complicação.</p>
+                    </div>
+
+                    <button class="botao_roxo botao">Cadastre a sua clínica</button>
+                </div>
+            </div>
+
+            <div class="container1_subdiv3">
+                <div class="subdiv3_descricao">
+                    <h1 class="titulo3">Como Funciona</h1>
+                    <h2>Um processo simples para pacientes e clínicas</h2>
+                </div>
+
+                <div class="subdiv3_opcoes">
+                    <a href="">Para Pacientes</a>
+                    <a href="">Para Clínicas</a>
+                </div>
+
+                <div class="subdiv3_passo">
+                    <div class="subdiv3_passo_elemento"><img src="assets/img/Numero 1.svg" alt="">
+                        <p class="passo_elemento_titulo">Cadastre-se</p>
+                        <p class="passo_elemento_desc">Crie sua conta informando seus dados básicos</p>
+                    </div>
+
+                    <div class="subdiv3_passo_elemento"><img src="assets/img/Numero 2.svg" alt="">
+                        <p class="passo_elemento_titulo">Encontre uma clínica</p>
+                        <p class="passo_elemento_desc">Busque por especialidade, localização ou nome</p>
+                    </div>
+
+                    <div class="subdiv3_passo_elemento"><img src="assets/img/Numero 3.svg" alt="">
+                        <p class="passo_elemento_titulo">Agende sua consulta</p>
+                        <p class="passo_elemento_desc">Escolha a data e horário que melhor se encaixam</p>
+                    </div>
+
+                    <div class="subdiv3_passo_elemento"><img src="assets/img/Numero 4.svg" alt="">
+                        <p class="passo_elemento_titulo">Compareça</p>
+                        <p class="passo_elemento_desc">Receba lembretes e não perca sua consulta</p>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="container1_subdiv4">
+                <p class="subdiv4_titulo">Clínicas Disponíveis</p>
+                <p class="subdiv4_desc">Encontre a clínica ideal para seu atendimento</p>
+                <div class="subdiv4_grid"></div>
+
+            </div>
+        </div>
+    </div>
+
     <script src="assets/js/main.js"></script>
+    <footer>
+        <div class="footer_subdiv1">
+
+            <div class="footer_element techcare_div">
+                <div class="footer_logo"><img src="./assets/img/Logo-site-branco.svg" alt="">
+                    <h1 class="footer_title">TechCare</h1>
+                </div>
+                <p>Simplificando o agendamento e a gestão de consultas para clínicas de pequeno porte.</p>
+                <div class="redes">
+                    <a href="#"><img src="./assets/img/icone-facebook-footer.svg" alt=""></a>
+                    <a href="#"><img src="./assets/img/icone-instagram-footer.svg" alt=""></a>
+                    <a href="#"><img src="./assets/img/icone-tiktok-footer.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer_section2">
+                <div class="footer_desc">
+                    <h1 class="footer_title2">Serviços</h1>
+                    <a href="#">Agendamento Online</a>
+                    <a href="#">Gestão de Consultas</a>
+                    <a href="#">Lembretes Automáticos</a>
+                    <a href="#">Suporte e Treinamento</a>
+                </div>
+
+                <div class="footer_desc">
+                    <h1 class="footer_title2">Links Úteis</h1>
+                    <a href="#">Termos e Condições</a>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Fale Conosco</a>
+
+                </div>
+
+                <div class="footer_desc">
+                    <h1 class="footer_title2">Localidade</h1>
+                    <p>Rua Senai, 123 – Joinville, SC</p>
+                    <p>(09) 40028-9220</p>
+                    <p>contato@techcareplus.com</p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">© 2025 TechCare+. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
+
+
 </html>
