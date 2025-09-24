@@ -65,7 +65,7 @@
         <h3 class="sobre-clinica">Com o TechCare+, organizar horários e atender pacientes fica mais <br>simples e tranquilo.</h3>
         <form method="POST" action="submit_form.php">
             <div class="processa-formulario">
-                <input type="email" class="espaco-email" placeholder="E-mail" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"><button type="submit" class="botao-sobre">Solicitar Mais Informações</button><br>
+                <input type="email" class="espaco-email" placeholder="E-mail"><button type="submit" class="botao-sobre">Solicitar Mais Informações</button><br>
             <br></div>
         </form>
     </legend>
@@ -113,6 +113,15 @@
         </div>
         <p class="copyright">© 2025 TechCare+. Todos os direitos reservados.</p>
     </footer>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js">
+        const regexEmail = /^[\w.-]+@[A-Za-z]+\.[A-Za-z]{2,}(\.[A-Za-z]{2,})?$/;
+        const email = document.getElementById("email").value.trim();
+        if (!regexEmail.test(email)) {
+        alert("E-mail inválido!");
+        return false;
+        }
+        return true;
+    </script>
+    
 </body>
 </html>
