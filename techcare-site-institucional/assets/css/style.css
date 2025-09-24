@@ -15,7 +15,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     height: fit-content;
     overflow-x: hidden;
@@ -197,6 +197,54 @@
     font-size: 20px;
     font-weight: 200;
 }
+.container1_subdiv3{
+    background-image: url('../img/background-hero-secao-pagina.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    padding: 40px;
+    border-radius: 32px;
+    background-color: #4851D5E0;
+    
+}
+.container1_subdiv3 h1{
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+}
+.container1_subdiv3 h2{
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.subdiv3_descricao{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.subdiv3_opcoes{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+}
+.subdiv3_opcoes a{
+    width: 300px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
 
 .container1_subdiv3 {
     background-image: url('../img/background-hero-secao-pagina.jpg');
@@ -373,28 +421,33 @@ h1 {
     align-items: flex-start;
     justify-content: space-between;
     gap: 30px;
-    margin-top: 200px;
+    margin-top:100px;
     flex-wrap: wrap;
     /* Responsivo */
 }
 
 
 .texto p {
-    text-indent: 30px;
-    margin-bottom: 40px;
+    text-indent: 10px;
+    margin-bottom: 20px;
     color: #0E0E25;
     font-size: 18px;
     letter-spacing: 1px;
+    margin-left: 20px !important;
 }
 
 .img-sobre {
-    width: 550px;
+    width: 500px;
     max-width: 100%;
     border-radius: 25px;
     object-fit: cover;
-    margin-right: 100px;
+    margin-right: 30px !important;
+    margin-left: 20px !important;
     box-shadow: 0 4px 10px rgba(122, 122, 122, 0.2);
     /* sombra suave */
+}
+.imagem-sobre{
+    margin-left: 15px !important;
 }
 
 /* Subtítulo */
@@ -402,6 +455,14 @@ h1 {
     font-size: 15px;
     margin-bottom: 20px;
     color: #ffffff;
+}
+.Sobre-caracater{
+    font-size: 105px;
+    color: #999EE4;
+}
+.sobre{
+    margin-left: 20px !important;
+    color: #4851D5;
 }
 
 /* -------------------------
@@ -420,12 +481,13 @@ h1 {
     font-size: 35px;
     font-weight: bold;
     color: #ffffff;
-    padding: 15px 90px;
+    padding: 15px 200px;
     background-color: #4851D5;
-    border-radius: 5px;
-    margin: 200px auto 5px auto;
+    border-radius: 20px;
+    margin: 250px auto 5px auto;
     text-align: center;
     width: fit-content;
+    margin-bottom: 110px;
 }
 
 form {
@@ -443,7 +505,7 @@ input[type="email"],
     margin-right: 10px;
     margin-left: 5px;
     border: 1px solid #999EE4;
-    border-radius: 4px;
+    border-radius: 10px;
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
     background-color: #fff;
@@ -460,7 +522,7 @@ button,
     background-color: #212155;
     color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     cursor: pointer;
@@ -481,113 +543,120 @@ h2 {
     text-indent: 30px;
 }
 
-/* Estilização footer */
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.hero-sub-pagina{
     width: 100%;
-    height: 48vh;
-    gap: 15px;
-    background-color: #4851D5F2;
+    background-image: url("../img/fundo-paginas.jpg");
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 
-.footer_subdiv1 {
+.container-formulario-cliente{
+    width: 100%;
+    height: 100vh;
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 40px;
-    align-items: center;
-    width: 70%;
-    height: 80%;
-    border-bottom: 1px solid #FFFFFFB2;
 
 }
 
-.footer_subdiv1 p {
-    display: flex;
-    align-items: center;
-
+.form-section{
     width: 90%;
-    color: #FFFFFFCC;
-}
-
-.footer_element {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 20%;
-    height: 80%;
-}
-
-.redes {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.header_botoes_formulario, .form-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.header_botoes_formulario{
+    gap: 20px;
+
+}
+
+
+.form-container{
+    flex-direction: column;
     gap: 20px;
 }
 
-.footer_logo {
-    gap: 15px;
+.form-title{
+    font-size: 2rem;
 }
 
-.footer_logo img {
-    width: 70px;
-}
-
-.footer_logo .footer_title {
-    font-family: monospace;
-    font-size: 32px;
-    letter-spacing: 2px;
-    color: #FFFFFF;
-}
-
-.techcare_div {
-    width: 25%;
-    margin-right: 50px;
-}
-
-.techcare_div .footer_logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 30%;
-}
-
-.techcare_div a {
-    text-decoration: none;
-    width: 100%;
-}
-
-.footer_title2 {
-    font-size: 20px;
-    color: #FFFFFF;
-
-}
-
-.footer_desc {
+.appointment-form{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 18px;
-    width: 100%;
-    height: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 32px;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.footer_section2 {
+.appointment-form input{
+    border:none;
+    border-radius:20px ;
+    background-color: #dedede;
+    padding: 12px 20px;
+    width: 100%;
+}
+
+.appointment-form::placeholder {
+    color: #7A7A7A;
+
+}
+
+.appointment-form label{
+    color: #000;
+    font-size: 1rem;
+}
+
+
+
+.form-row{
+    width: 100%;
     display: flex;
-    margin-bottom: 20px;
-    justify-content: space-between;
+    gap: 12px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 70%;
 }
 
-.copyright {
-    color: #FFFFFF;
+.appointment-form select{
+    background-color: #dadcf7;
+    border-radius: 20px;
+    padding: 12px 20px;
+    border: none;
 }
 
-/* Estilização footer */
+.botao-fomulario{
+    border:none;
+    background-color: #4851d5 ;
+    border-radius: 20px;
+    padding: 12px 10px;
+    width: 50%;
+    color: #fff;
+}
+
+.botao-fomulario:hover{
+    background-color: #293092 ;
+    color: #fff;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+
+}
+

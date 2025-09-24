@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="img/svg" href="assets/img/Logo-site-azul.svg">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css"> 
+    <link rel="stylesheet" href="assets/css/header_footer.css">
     <title>TechCare</title>
 </head>
 <body>
@@ -26,17 +27,15 @@
             </nav>
         </div>
         <div class="header_botoes">
-
-            <button class="botao_roxo botao">Marcar Consulta</button>
+            <button class="botao_roxo">Marcar Consulta</button>
             <button class="transparente botao">Cadastrar Clínica</button>
-
         </div>
     </header>
     <!-- header da página -->
     
-    <section class="hero">
-        <div class="hero-background">
-            <img src="assets/img/background-hero-secao-pagina.jpg" alt="Background">
+    <section class="hero-sub-pagina">
+        <div class="conteiner-sub-pagina">
+            <img class="img-hero-pagina" src="assets/img/fundo-paginas.jpg" alt="Background">
         </div>
     </section>
 
@@ -44,7 +43,8 @@
     <!-- Seção Sobre -->
 <div class="conteudo-sobre">
     <div class="texto">
-        <h2 class="sobre">Sobre Nós</h2><br>
+        <h1 class="Sobre-caracater">&#10077;<h1>
+        <h2 class="sobre">Sobre Nós</h2><br><br><br>
         <p>&nbsp;&nbsp;&nbsp;A TechCare é uma plataforma digital desenvolvida para simplificar e modernizar a <br>
            forma como clínicas e pacientes se conectam. Nosso objetivo é oferecer um serviço <br>
            prático e seguro, onde clínicas podem realizar seu cadastro de maneira rápida e, a partir <br>
@@ -56,27 +56,22 @@
            tornar o acesso à saúde mais ágil, organizado e acessível. Com a TechCare, buscamos <br>
            promover eficiência para as clínicas e praticidade para os pacientes.</p>
     </div>
-
     <div class="imagem-sobre">
         <img src="assets/img/img-equipe-sobre.jpg" alt="Equipe TechCare" class="img-sobre">
     </div>
 </div>
-    <br>
     <div class="formulario-legenda">
-        <legend class="forms-sobre">Facilite o dia a dia da sua clínica 
-        <h3 class="sobre-clinica">Com o TechCare+, organizar horários e atender pacientes fica mais simples e tranquilo.</h3>
+        <legend class="forms-sobre"><br>Facilite o dia a dia da <br>sua clínica 
+        <h3 class="sobre-clinica">Com o TechCare+, organizar horários e atender pacientes fica mais <br>simples e tranquilo.</h3>
         <form method="POST" action="submit_form.php">
             <div class="processa-formulario">
-                <input type="email" class="espaco-email" placeholder="E-mail" required>
-                <button type="submit" class="botao-sobre">Solicitar Mais Informações</button>
-            </div>
+                <input type="email" class="espaco-email" placeholder="E-mail"><button type="submit" class="botao-sobre">Solicitar Mais Informações</button><br>
+            <br></div>
         </form>
     </legend>
     </div>
-    <script src="assets/js/main.js"></script>
-    <footer></footer>
     
-    <footer>
+    <br><br><br><footer>
         <div class="footer_subdiv1">
 
             <div class="footer_element techcare_div">
@@ -106,7 +101,7 @@
                     <p>Fale Conosco</p>
                     
                 </div>
-
+                
                 <div class="footer_desc">
                     <h1 class="footer_title2">Localidade</h1>
                     <p>Rua Senai, 123 – Joinville, SC</p>
@@ -118,5 +113,15 @@
         </div>
         <p class="copyright">© 2025 TechCare+. Todos os direitos reservados.</p>
     </footer>
+    <script src="assets/js/main.js">
+        const regexEmail = /^[\w.-]+@[A-Za-z]+\.[A-Za-z]{2,}(\.[A-Za-z]{2,})?$/;
+        const email = document.getElementById("email").value.trim();
+        if (!regexEmail.test(email)) {
+        alert("E-mail inválido!");
+        return false;
+        }
+        return true;
+    </script>
+    
 </body>
 </html>
