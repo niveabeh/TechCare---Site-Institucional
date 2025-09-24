@@ -5,7 +5,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+.bodyindex {
     background-image: url('../img/background-hero-site.jpg');
     background-position: center;
     background-size: cover;
@@ -115,7 +115,7 @@ body {
 .subtitulo {
     font-size: 28px;
     margin-left: 5px;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     font-weight: lighter;
     color: #4851D5;
 }
@@ -165,8 +165,8 @@ body {
     align-items: center;
     justify-content: space-between;
     min-width: 412px;
-    width: 22vw;
-    height: 55vh;
+    width: 400px;
+    height: 420px;
     border: 1px solid #C0C0BD80;
     border-radius: 16px;
     background-color: #F3F3FF;
@@ -197,53 +197,133 @@ body {
     font-size: 20px;
     font-weight: 200;
 }
-.container1_subdiv3{
+
+.container1_subdiv3 {
     background-image: url('../img/background-hero-secao-pagina.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    height: 80vh;
+    min-height: 670px;
     width: 100%;
     padding: 40px;
     border-radius: 32px;
     background-color: #4851D5E0;
-    
+    margin-top: 200px;
+    margin-bottom: 200px;
+
 }
-.container1_subdiv3 h1{
+
+.container1_subdiv3 h1 {
     color: #FFFFFF;
     letter-spacing: 2px;
     font-size: 42px;
     font-weight: bold;
     text-align: center;
 }
-.container1_subdiv3 h2{
+
+.container1_subdiv3 h2 {
     color: #FFFFFF;
     letter-spacing: 2px;
     font-size: 20px;
     font-weight: lighter;
 }
-.subdiv3_descricao{
+
+.subdiv3_descricao {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-.subdiv3_opcoes{
+
+.subdiv3_opcoes {
     display: flex;
     width: 50%;
     justify-content: space-between;
     align-items: center;
     height: fit-content;
 }
-.subdiv3_opcoes a{
+
+.subdiv3_opcoes a {
     width: 300px;
     font-weight: bold;
     text-align: center;
     font-size: 30px;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.subdiv3_passo {
+    min-height: 60%;
+    max-height: fit-content;
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow-y: hidden;
+    overflow-x: auto;
+
+}
+
+.subdiv3_passo_elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #F3F3FF;
+    padding: 40px;
+    border-radius: 16px;
+    width: 320px;
+    height: 350px;
+    box-shadow: 0px 0px 15px #0000001F;
+}
+
+.subdiv3_passo_elemento img {
+    width: 70px;
+}
+
+.passo_elemento_titulo {
+    color: #0E0E25E5;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.passo_elemento_desc {
+    font-size: 20px;
+    color: #7A7A7A;
+    text-align: center;
+}
+.container1_subdiv4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-color: #FFFFFF;
+}
+
+.subdiv4_titulo{
+    color: #4851D5;
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.subdiv4_desc{
+    color: #7A7A7A;
+    font-size: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.subdiv4_grid{
+    height: 400px;
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill, 150px);
+    grid-auto-rows: 220px;
 }
 
 /* Estilização da index.html */
@@ -396,12 +476,13 @@ button:hover,
 .botao-sobre {
     margin: 0 20px;
 }
-h2{
+
+h2 {
     text-indent: 30px;
 }
 
 /* Estilização footer */
-footer{
+footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -410,9 +491,10 @@ footer{
     height: 48vh;
     gap: 15px;
     background-color: #4851D5F2;
-    
+
 }
-.footer_subdiv1{
+
+.footer_subdiv1 {
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -420,16 +502,18 @@ footer{
     width: 70%;
     height: 80%;
     border-bottom: 1px solid #FFFFFFB2;
-    
+
 }
-.footer_subdiv1 p{
+
+.footer_subdiv1 p {
     display: flex;
     align-items: center;
-    
+
     width: 90%;
     color: #FFFFFFCC;
 }
-.footer_element{
+
+.footer_element {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -437,45 +521,54 @@ footer{
     width: 20%;
     height: 80%;
 }
-.redes{
+
+.redes {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
-.footer_logo{
+
+.footer_logo {
     gap: 15px;
 }
-.footer_logo img{
+
+.footer_logo img {
     width: 70px;
 }
-.footer_logo .footer_title{
+
+.footer_logo .footer_title {
     font-family: monospace;
     font-size: 32px;
     letter-spacing: 2px;
     color: #FFFFFF;
 }
-.techcare_div{
+
+.techcare_div {
     width: 25%;
     margin-right: 50px;
 }
-.techcare_div .footer_logo{
+
+.techcare_div .footer_logo {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
     height: 30%;
 }
-.techcare_div a{
+
+.techcare_div a {
     text-decoration: none;
     width: 100%;
 }
-.footer_title2{
+
+.footer_title2 {
     font-size: 20px;
     color: #FFFFFF;
 
 }
-.footer_desc{
+
+.footer_desc {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -484,14 +577,17 @@ footer{
     width: 100%;
     height: 100%;
 }
-.footer_section2{
+
+.footer_section2 {
     display: flex;
     margin-bottom: 20px;
     justify-content: space-between;
     width: 100%;
     height: 70%;
 }
-.copyright{
+
+.copyright {
     color: #FFFFFF;
 }
+
 /* Estilização footer */
