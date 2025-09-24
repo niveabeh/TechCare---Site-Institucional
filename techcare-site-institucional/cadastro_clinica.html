@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCare - Marque A Sua Consulta</title>
+    <link rel="stylesheet" href="/techcare-site-institucional/assets/css/header_footer.css">
+    <link rel="stylesheet" href="/techcare-site-institucional/assets/css/style.css">
+</head>
+<body>
+     <!-- header da página -->
+     <header>
+        <div class="logo">
+            <a class="menu_button" href="index.html"><img src="assets/img/Logo-site-azul.svg" alt="TechCare"></a>
+            <div class="logo_desc">
+                <h1>TechCare</h1>
+                <h4>Agende fácil, cuide melhor.</h4>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <nav>
+                <a href="index.html">INÍCIO</a>
+                <a href="sobre.html">SOBRE</a>
+                <a href="contato.html">CONTATO</a>
+            </nav>
+        </div>
+        <div class="header_botoes">
+            <button class="botao_roxo botao">Marcar Consulta</button>
+            <button class="transparente botao">Cadastrar Clínica</button>
+        </div>
+    </header>
+    <!-- header da página -->
+
+    <!-- Hero Section -->
+    <section class="hero-sub-pagina">
+        <div class="conteiner-sub-pagina">
+            <img class="img-hero-pagina" src="/techcare-site-institucional/assets/img/fundo-paginas.jpg" alt="Background">
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="container-formulario-clinica">
+        <div class="container">
+            <div class="form-section">
+                <div class="form-container">
+                    <h1 class="form-title">Marque A Sua Consulta</h1>
+                    
+                    <div class="header_botoes">
+                        <button class="botao_roxo botao">Marcar Consulta</button>
+                        <button class="transparente botao">Cadastrar Clínica</button>
+                    </div>
+
+                    <form class="appointment-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nome">Nome Completo</label>
+                                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+                            </div>
+                            <div class="form-group">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="cpf">CPF</label>
+                                <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
+                            </div>
+                            <div class="form-group">
+                                <label for="nascimento">Data de Nascimento</label>
+                                <input type="text" id="nascimento" name="nascimento">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="especialidade">Escolha Sua Especialidade</label>
+                            <select id="especialidade" name="especialidade">
+                                <option value="">Clínica Geral ou Clínica Médica</option>
+                                <option value="cardiologia">Cardiologia</option>
+                                <option value="dermatologia">Dermatologia</option>
+                                <option value="neurologia">Neurologia</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="area">Área Geográfica</label>
+                            <select id="area" name="area">
+                                <option value="">Clínica Geral ou Clínica Médica</option>
+                                <option value="zona-norte">Zona Norte</option>
+                                <option value="zona-sul">Zona Sul</option>
+                                <option value="centro">Centro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="medico">Escolha o Médico</label>
+                            <select id="medico" name="medico">
+                                <option value="">Clínica Geral ou Clínica Médica</option>
+                                <option value="dr-silva">Dr. João Silva</option>
+                                <option value="dra-santos">Dra. Maria Santos</option>
+                                <option value="dr-oliveira">Dr. Pedro Oliveira</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">Marcar Consulta</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer >
+        
+    </footer>
+
+    <script src="/techcare-site-institucional/assets/js/main.js"></script>
+</body>
+</html>
