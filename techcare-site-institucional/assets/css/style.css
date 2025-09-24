@@ -756,6 +756,11 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url("../img/background-hero-site.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0px;
 }
 .container-contato-pai{
     width: 90%;
@@ -767,14 +772,34 @@ h2 {
 .container-contato-esquerdo{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: baseline;
+    justify-content: left;
     width: 50%;
+}
+.container-contato-esquerdo h3{
+    font-size: 1.5rem;
+    
+}
+.container-contato-esquerdo h1{
+    font-size: 3rem;
+    
+}
+.container-contato-esquerdo p{
+    font-size: 1.2rem;
+   
+}
+.hero-pag-contato{
+    background-image: url("../img/fundo-paginas.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
 }
 .container-contato-direito{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: end;
+    justify-content: left;
     width: 50%;
     padding: 40px;
     border-radius: 20px;
@@ -787,4 +812,75 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    border-radius: 20px;
+    background-color: #4851d57a;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    color: #fff;
+}
+.container-contato-informacoes-contato p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+.container-contato-informacoes-filho p{
+    font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+.container-contato-informacoes-filho{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.container-formulario-contato{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 32px;
+    width: 100%;
+}
+.container-linha-frm-contato{
+    display: flex;
+    gap: 12px;
+}
+.container-grupo-frm-contato{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container-formulario-contato textarea{
+    border: none;
+    border-radius: 20px;
+    background-color: #F5F5F5;
+    padding: 12px 20px;
+    width: 100%;
+    height: 100px;
+}
+.container-formulario-contato label{
+    color: #7a7a7a;
+    font-size: 1rem;
+}
+.container-formulario-contato input{
+    border: none;
+    border-radius: 20px;
+    background-color: #F5F5F5;
+    padding: 12px 20px;
+    width: 100%;
+}
+.container-formulario-contato::placeholder{
+    color: #7A7A7A;
+}
+.btn-contato-enviar{
+    border: none;
+    background-color: #4851d5;
+    border-radius: 20px;
+    padding: 12px 10px;
+    width: 40%;
+    color: #fff;
+    align-self: center;
+    margin-top: 20px;
 }
