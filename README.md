@@ -1,39 +1,69 @@
-# TechCare---Site-Institucional
+
+# TechCare - Site Institucional
+
 O principal objetivo deste trabalho é não apenas a criação da aplicação em si, mas também a ênfase no trabalho em equipe e nas boas práticas de colaboração durante o processo de desenvolvimento.
+
+
+# Time
+
+- Tech Lead:  [@niveabeh](https://github.com/niveabeh)
+- Dev:  [@Devluhck](https://github.com/Devluhck)
+- Dev:  [@PedroHenriQdSouza](https://github.com/PedroHenriQdSouza)
+- Dev:  [@RichardSilva05](https://github.com/RichardSilva05)
+
+# TechCare
+
 
 O projeto tem como desenvolvimento de um site institucional voltado para clínicas, permitindo que estas se cadastrem em nossa plataforma e disponibilizem aos pacientes a possibilidade de marcar consultas de forma prática e organizada.
 
 
-O time é composto por quatro integrantes:
-Tech Lead - Nívea souza
-Desenvolvedor – Lucas
-Desenvolvedor – Richard
-Desenvolvedor – Pedro Henrique
 
 
-Para manter clareza e eficiência no desenvolvimento, foram definidas as seguintes práticas:
+## Funcionalidades
 
-Nomenclatura de branches:
-
-main → versão estável e pronta para produção
-develop → ambiente de integração das funcionalidades
-feature/nome-da-funcionalidade → novas funcionalidades
-fix/nome-da-correção → correções específicas
-hotfix/nome-do-hotfix → ajustes urgentes em produção
-
-
-Commits claros e objetivos:
-
-add: formulário de cadastro de clínica
-fix: correção na validação do campo de e-mail
-update: melhoria no layout da página inicial
+- Simulação de formulário de cadastro de clínicas
+- Simulação de formulário de cadastro de consultas para pacientes
+- Simulação de formulário de contato (fale conosco)
+- Experiência do usuário na navegação
 
 
 
-Tecnologias Utilizadas:
-HTML5, CSS3 e JavaScript 
 
-Git e GitHub para versionamento e colaboração
+## Documentação
 
-Objetivo do Projeto
-O objetivo principal do projeto é proporcionar uma visão prática sobre o trabalho em equipe no desenvolvimento de software, aliando a aplicação de boas práticas em tecnologia, tais como organização de branches, padronização de commits e colaboração eficiente entre os integrantes da equipe.
+Nomenclatura de branches
+
+* main → versão estável e pronta para produção
+* develop → ambiente de integração das funcionalidades
+* feature/* → novas funcionalidades
+* fix/* → correções específicas
+
+Nomenclatura de commits
+
+* feat → implementação de uma nova funcionalidade
+
+* fix → correção em elementos HTML, JavaScript ou bugs em geral
+
+* style → implementação ou correção no CSS
+
+* docs → alterações em documentação (README, comentários, instruções)
+
+
+# Tecnologias Utilizadas
+* HTML
+* CSS
+* JavaScript
+
+
+
+## Instalação
+
+Copie o link desse repositório e rode localmente
+
+link: https://github.com/niveabeh/TechCare---Site-Institucional
+
+```bash
+  git clone https://github.com/niveabeh/TechCare---Site-Institucional
+
+```
+    
