@@ -748,7 +748,10 @@ h2 {
     gap: 20px;
 
 }
-
+.header_botoes a{
+    text-decoration: none;
+    text-align: center;
+}
 .form-container {
     flex-direction: column;
     gap: 20px;

@@ -28,8 +28,10 @@
             </nav>
         </div>
         <div class="header_botoes">
-            <button class="botao_roxo">Marcar Consulta</button>
-            <button class="transparente botao">Cadastrar Clínica</button>
+
+            <a href="consulta_usuario.html"><button class="botao_roxo botao">Marcar Consulta</button></a>
+            <a href="cadastro_clinica.html"><button class="transparente botao">Cadastrar Clínica</button></a>
+
         </div>
     </header>
     <!-- header da página -->
@@ -43,8 +45,10 @@
                 <h1 class="form-title">Marque A Sua Consulta</h1>
 
                 <div class="header_botoes_formulario">
-                    <button class="botao_roxo botao">Marcar Consulta</button>
-                    <button class="transparente botao">Cadastrar Clínica</button>
+
+                    <a href="consulta_usuario.html" class="botao_roxo botao">Marcar Consulta</a>
+                    <a href="cadastro_clinica.html" class="transparente botao">Cadastrar Clínica</a>
+
                 </div>
 
                 <form class="appointment-form" method="" id="form-consulta">
@@ -52,27 +56,38 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label for="nomeInputConsulta">Nome Completo</label>
-                            <input type="text" id="nomeInputConsulta" name="nomeInputConsulta" placeholder="Digite seu nome completo">
+
+                            <input type="text" id="nomeInputConsulta" name="nomeInputConsulta"
+                                placeholder="Digite seu nome completo">
                         </div>
                         <div class="form-group">
                             <label for="telefoneInputConsulta">Telefone</label>
-                            <input type="text" id="telefoneInputConsulta" name="telefoneInputConsulta" placeholder="(00) 00000-0000">
+                            <input type="text" id="telefoneInputConsulta" name="telefoneInputConsulta"
+                                placeholder="(00) 00000-0000">
+
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
                             <label for="cpfInputConsulta">CPF</label>
-                            <input type="text" id="cpfInputConsulta" name="cpfInputConsulta" placeholder="000.000.000-00">
+
+                            <input type="text" id="cpfInputConsulta" name="cpfInputConsulta"
+                                placeholder="000.000.000-00">
                         </div>
                         <div class="form-group">
                             <label for="nascimentoInputConsulta">Data de Nascimento</label>
-                            <input type="text" id="nascimentoInputConsulta" name="nascimentoInputConsulta" placeholder="DD/MM/AAAA">
+                            <input type="text" id="nascimentoInputConsulta" name="nascimentoInputConsulta"
+                                placeholder="DD/MM/AAAA">
+
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="emailInputConsulta">E-mail</label>
-                        <input type="text" id="emailInputConsulta" name="emailInputConsulta" placeholder="Digite seu e-mail">
+
+                        <input type="text" id="emailInputConsulta" name="emailInputConsulta"
+                            placeholder="Digite seu e-mail">
+
                     </div>
 
                     <!-- Dados da Consulta -->
@@ -113,12 +128,12 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer da página -->
     <footer>
         <div class="footer_subdiv1">
+
             <div class="footer_element techcare_div">
-                <div class="footer_logo">
-                    <img src="./assets/img/Logo-site-branco.svg" alt="">
+                <div class="footer_logo"><img src="./assets/img/Logo-site-branco.svg" alt="">
                     <h1 class="footer_title">TechCare</h1>
                 </div>
                 <p>Simplificando o agendamento e a gestão de consultas para clínicas de pequeno porte.</p>
@@ -131,17 +146,18 @@
             <div class="footer_section2">
                 <div class="footer_desc">
                     <h1 class="footer_title2">Serviços</h1>
-                    <a href="#">Agendamento Online</a>
-                    <p>Gestão de Consultas</p>
-                    <p>Lembretes Automáticos</p>
-                    <p>Suporte e Treinamento</p>
+                    <a href="cadastro_clinica.html">Agendamento Online</a>
+                    <a href="consulta_usuario.html">Gestão de Consultas</a>
+                    <a href="contato.html">Lembretes Automáticos</a>
+                    <a href="sobre.html">Suporte e Treinamento</a>
                 </div>
 
                 <div class="footer_desc">
                     <h1 class="footer_title2">Links Úteis</h1>
-                    <p>Termos e Condições</p>
-                    <p>Política de Privacidade</p>
-                    <p>Fale Conosco</p>
+                    <a href="#">Termos e Condições</a>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="contato.html">Fale Conosco</a>
+
                 </div>
 
                 <div class="footer_desc">
@@ -149,12 +165,14 @@
                     <p>Rua Senai, 123 – Joinville, SC</p>
                     <p>(09) 40028-9220</p>
                     <p>contato@techcareplus.com</p>
+                    <p></p>
                 </div>
             </div>
         </div>
         <p class="copyright">© 2025 TechCare+. Todos os direitos reservados.</p>
     </footer>
-    
+    <!-- Footer da página -->
+
     <script src="assets/js/main.js"></script>
 </body>
 
