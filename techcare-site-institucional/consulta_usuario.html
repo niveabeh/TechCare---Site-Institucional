@@ -28,98 +28,107 @@
             </nav>
         </div>
         <div class="header_botoes">
-            <button class="botao_roxo">Marcar Consulta</button>
-            <button class="transparente botao">Cadastrar Clínica</button>
+
+            <a href="consulta_usuario.html"><button class="botao_roxo botao">Marcar Consulta</button></a>
+            <a href="cadastro_clinica.html"><button class="transparente botao">Cadastrar Clínica</button></a>
+
         </div>
     </header>
     <!-- header da página -->
 
-    <section class="hero-sub-pagina">
+    <section class="hero-sub-pagina"></section>
 
-
-    </section>
-
-    <!-- selcr Content -->
+    <!-- Form Content -->
     <section class="container-formulario-cliente">
-        
-            <div class="form-section">
-                <div class="form-container">
-                    <h1 class="form-title">Marque A Sua Consulta</h1>
+        <div class="form-section">
+            <div class="form-container">
+                <h1 class="form-title">Marque A Sua Consulta</h1>
 
-                    <div class="header_botoes_formulario">
+                <div class="header_botoes_formulario">
 
-                        <button class="botao_roxo botao">Marcar Consulta</button>
-                        <button class="transparente botao">Cadastrar Clínica</button>
+                    <a href="consulta_usuario.html" class="botao_roxo botao">Marcar Consulta</a>
+                    <a href="cadastro_clinica.html" class="transparente botao">Cadastrar Clínica</a>
+
+                </div>
+
+                <form class="appointment-form" method="" id="form-consulta">
+                    <!-- Dados Pessoais -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nomeInputConsulta">Nome Completo</label>
+
+                            <input type="text" id="nomeInputConsulta" name="nomeInputConsulta"
+                                placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefoneInputConsulta">Telefone</label>
+                            <input type="text" id="telefoneInputConsulta" name="telefoneInputConsulta"
+                                placeholder="(00) 00000-0000">
+
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cpfInputConsulta">CPF</label>
+
+                            <input type="text" id="cpfInputConsulta" name="cpfInputConsulta"
+                                placeholder="000.000.000-00">
+                        </div>
+                        <div class="form-group">
+                            <label for="nascimentoInputConsulta">Data de Nascimento</label>
+                            <input type="text" id="nascimentoInputConsulta" name="nascimentoInputConsulta"
+                                placeholder="DD/MM/AAAA">
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="emailInputConsulta">E-mail</label>
+
+                        <input type="text" id="emailInputConsulta" name="emailInputConsulta"
+                            placeholder="Digite seu e-mail">
 
                     </div>
 
-                    <form class="appointment-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="nome">Nome Completo</label>
-                                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
-                            </div>
-                            <div class="form-group">
-                                <label for="telefone">Telefone</label>
-                                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
-                            </div>
-                        </div>
+                    <!-- Dados da Consulta -->
+                    <div class="form-group">
+                        <label for="especialidadeInputConsulta">Escolha Sua Especialidade</label>
+                        <select id="especialidadeInputConsulta" name="especialidadeInputConsulta">
+                            <option value="">Selecione uma especialidade</option>
+                            <option value="clinica-geral">Clínica Geral ou Clínica Médica</option>
+                            <option value="cardiologia">Cardiologia</option>
+                            <option value="dermatologia">Dermatologia</option>
+                            <option value="neurologia">Neurologia</option>
+                        </select>
+                    </div>
 
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="cpf">CPF</label>
-                                <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
-                            </div>
-                            <div class="form-group">
-                                <label for="nascimento">Data de Nascimento</label>
-                                <input type="text" id="nascimento" name="nascimento">
-                            </div>
-                        </div>
+                    <div class="form-group">
+                        <label for="areaInputConsulta">Área Geográfica</label>
+                        <select id="areaInputConsulta" name="areaInputConsulta">
+                            <option value="">Selecione uma área</option>
+                            <option value="zona-norte">Zona Norte</option>
+                            <option value="zona-sul">Zona Sul</option>
+                            <option value="centro">Centro</option>
+                        </select>
+                    </div>
 
-                        <div class="form-group">
-                            <label for="email">E-mail</label>
-                            <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
-                        </div>
+                    <div class="form-group">
+                        <label for="medicoInputConsulta">Escolha o Médico</label>
+                        <select id="medicoInputConsulta" name="medicoInputConsulta">
+                            <option value="">Selecione um médico</option>
+                            <option value="dr-silva">Dr. João Silva</option>
+                            <option value="dra-santos">Dra. Maria Santos</option>
+                            <option value="dr-oliveira">Dr. Pedro Oliveira</option>
+                        </select>
+                    </div>
 
-                        <div class="form-group">
-                            <label for="especialidade">Escolha Sua Especialidade</label>
-                            <select id="especialidade" name="especialidade">
-                                <option value="">Clínica Geral ou Clínica Médica</option>
-                                <option value="cardiologia">Cardiologia</option>
-                                <option value="dermatologia">Dermatologia</option>
-                                <option value="neurologia">Neurologia</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="area">Área Geográfica</label>
-                            <select id="area" name="area">
-                                <option value="">Clínica Geral ou Clínica Médica</option>
-                                <option value="zona-norte">Zona Norte</option>
-                                <option value="zona-sul">Zona Sul</option>
-                                <option value="centro">Centro</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="medico">Escolha o Médico</label>
-                            <select id="medico" name="medico">
-                                <option value="">Clínica Geral ou Clínica Médica</option>
-                                <option value="dr-silva">Dr. João Silva</option>
-                                <option value="dra-santos">Dra. Maria Santos</option>
-                                <option value="dr-oliveira">Dr. Pedro Oliveira</option>
-                            </select>
-                        </div>
-
-                        <button class="botao-fomulario">Marcar Consulta</button>
-                    </form>
-                </div>
+                    <button type="submit" class="botao-fomulario">Marcar Consulta</button>
+                </form>
             </div>
-        
+        </div>
     </section>
 
-
-    <!-- Footer -->
+    <!-- Footer da página -->
 
     <footer>
         <div class="footer_subdiv1">
@@ -138,17 +147,19 @@
             <div class="footer_section2">
                 <div class="footer_desc">
                     <h1 class="footer_title2">Serviços</h1>
-                    <a href="#">Agendamento Online</a>
-                    <p>Gestão de Consultas</p>
-                    <p>Lembretes Automáticos</p>
-                    <p>Suporte e Treinamento</p>
+
+                    <a href="cadastro_clinica.html">Agendamento Online</a>
+                    <a href="consulta_usuario.html">Gestão de Consultas</a>
+                    <a href="contato.html">Lembretes Automáticos</a>
+                    <a href="sobre.html">Suporte e Treinamento</a>
+
                 </div>
 
                 <div class="footer_desc">
                     <h1 class="footer_title2">Links Úteis</h1>
-                    <p>Termos e Condições</p>
-                    <p>Política de Privacidade</p>
-                    <p>Fale Conosco</p>
+                    <a href="#">Termos e Condições</a>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="contato.html">Fale Conosco</a>
 
                 </div>
 
@@ -163,7 +174,10 @@
         </div>
         <p class="copyright">© 2025 TechCare+. Todos os direitos reservados.</p>
     </footer>
+    <!-- Footer da página -->
+
     <script src="assets/js/main.js"></script>
 </body>
 
 </html>
+
