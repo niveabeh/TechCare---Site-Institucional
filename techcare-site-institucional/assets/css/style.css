@@ -90,7 +90,7 @@
     min-height: 50vh;
     max-height: fit-content;
     background-color: white;
-    padding: 150px 40px;
+    padding: 150px 40px 0px 40px;
 }
 
 .container1_subdiv1 {
@@ -148,15 +148,6 @@
 
 }
 
-/* 
-.container1_elementos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-
-} 
-*/
 
 .elemento {
     display: flex;
@@ -171,8 +162,8 @@
     border-radius: 16px;
     background-color: #F3F3FF;
     box-shadow: 0px 0px 15px #0000001F;
-
 }
+
 
 .elemento img {
     width: 120px;
@@ -206,12 +197,11 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 80vh;
-    width: 100%;
+    height: 650px;
+    width: 1500px;
     padding: 40px;
     border-radius: 32px;
     background-color: #4851D5E0;
-
 }
 
 .container1_subdiv3 h1 {
@@ -244,30 +234,31 @@
 }
 
 .subdiv3_opcoes a {
-    width: 300px;
-    font-weight: bold;
-    text-align: center;
-    font-size: 30px;
-    color: #FFFFFF;
+    color: #FFFFFFB2;
     text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.2s ease;
 }
 
-.container1_subdiv3 {
-    background-image: url('../img/background-hero-secao-pagina.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 670px;
-    width: 100%;
-    padding: 40px;
-    border-radius: 32px;
-    background-color: #4851D5E0;
-    margin-top: 200px;
-    margin-bottom: 200px;
+.subdiv3_opcoes a.active {
+    color: #FFFFFF;
+}
 
+.subdiv3_opcoes a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #FFFFFF;
+    transition: width 0.2s ease;
+}
+
+.subdiv3_opcoes a.active::after {
+    width: 72%;
 }
 
 .container1_subdiv3 h1 {
@@ -304,7 +295,6 @@
     font-weight: bold;
     text-align: center;
     font-size: 30px;
-    color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -357,6 +347,7 @@
     width: 100%;
     min-height: 500px;
     max-height: fit-content;
+    padding: 50px 0px;
     background-color: #FFFFFF;
 }
 
@@ -397,9 +388,18 @@
     box-shadow: 0 4px 14px rgba(122, 122, 122, 0.2);
     width: 420px;
     height: 510px;
+    transition: transform 0.2s ease;
+}
+
+.grid_element:hover {
+    margin-bottom: 20px;
+    transform: scale(1.05);
 }
 
 .grid_element_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #4851D5;
     height: 35%;
     width: 100%;
@@ -418,7 +418,7 @@
     justify-content: space-between;
     width: 100%;
     height: 200px;
-    padding: 20px;
+    padding: 0px 20px;
     align-items: flex-start;
 }
 
@@ -426,7 +426,7 @@
     color: #0E0E25E5;
     font-size: 22px;
     font-weight: lighter;
-    
+
 }
 
 .grid_element p {
@@ -435,27 +435,97 @@
     font-weight: lighter;
 
 }
-.grid_element_local{
+
+.grid_element_local {
     display: flex;
     align-items: center;
 }
-.grid_element_buttons{
+
+.grid_element_buttons {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.grid_element_buttons button{
+
+.grid_element_buttons button {
     font-size: 15px;
     min-width: 120px;
     width: fit-content;
     height: 35px;
     padding: 8px;
     border-radius: 20px;
+    font-weight: lighter;
     border: none;
     background-color: #DADAFF;
     color: #7078EE;
     font-weight: 600;
     cursor: pointer;
+}
+
+.avaliacoes_clinica {
+    display: flex;
+    width: 100%;
+}
+
+.container1_subdiv5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+
+}
+
+.container_email {
+    height: 350px;
+    width: 80%;
+    gap: 40px;
+    border-radius: 20px;
+    padding: 30px 40px 0px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4851D5;
+}
+
+.container_email h1 {
+    width: 500px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 48px
+}
+
+.container_email p {
+    width: 500px;
+    letter-spacing: 3px;
+    text-align: center;
+    font-weight: lighter;
+    color: #FFFFFFE5;
+    font-size: 16px
+}
+
+.input-email {
+    width: 50px;
+    height: 50px;
+
+}
+
+.container_email button {
+    font-weight: lighter;
+    letter-spacing: 2px;
+    height: 50px;
+    background-color: #212155;
+    border-radius: 20px 20px 20px 0px;
+    transition: transform 0.2s ease;
+}
+
+.container_email button:hover {
+    height: 50px;
+    background-color: #262674;
+    color: #F3F3FF;
+    transform: scale(1.05);
+    box-shadow: 0 0px 10px rgba(72, 48, 206, 0.445);
+    border-radius: 20px 20px 20px 0px;
 }
 
 /* Estilização da index.html */
@@ -588,11 +658,11 @@ input[type="email"],
 .espaco-email {
     display: inline-block;
     padding: 10px;
-    width: 250px;
+    width: 500px;
     margin-right: 10px;
     margin-left: 5px;
     border: 1px solid #999EE4;
-    border-radius: 10px;
+    border-radius: 20px;
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
     background-color: #fff;
