@@ -478,6 +478,11 @@ body{
     width: 100%;
 
 }
+.formulario_email{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
 
 .container_email {
     height: 350px;

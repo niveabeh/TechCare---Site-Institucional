@@ -248,14 +248,17 @@
 
             </div>
             <div class="container1_subdiv5">
-                <div class="container_email">
-                    <h1>Facilite o Dia a Dia da Sua Clínica</h1>
-                    <p>Com o TechCare+, organizar horários e atender pacientes fica mais simples e tranquilo.</p>
-                    <div class="container_email+botao">
-                        <input type="email" class="input-email" placeholder="E-mail"> <button>Solicitar Mais
-                            Informações</button>
+                <form method="POST" action="submit_form.php" id="frm-cta" class="formulario_email">
+                    <div class="container_email">
+                        <h1>Facilite o Dia a Dia da Sua Clínica</h1>
+                        <p>Com o TechCare+, organizar horários e atender pacientes fica mais simples e tranquilo.</p>
+                        <div class="container_email+botao">
+                            <input type="email" id="inputCta" name="txtmail" class="input-email" placeholder="E-mail">
+                            <button type="submit">Solicitar
+                                Mais Informações</button>
+                        </div>
                     </div>
-                </div>
+                </form>
 
             </div>
         </div>
@@ -353,6 +356,15 @@
             });
         });
     });
+</script>
+<script src="assets/js/main.js">
+    const regexEmail = /^[\w.-]+@[A-Za-z]+\.[A-Za-z]{2,}(\.[A-Za-z]{2,})?$/;
+    const email = document.getElementById("email").value.trim();
+    if (!regexEmail.test(email)) {
+        alert("E-mail inválido!");
+        return false;
+    }
+    return true;
 </script>
 
 </html>
