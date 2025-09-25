@@ -6,10 +6,6 @@
 }
 body{
     overflow-x: hidden;
-}
-
-.bodyindex {
-    background-image: url('../img/background-hero-site.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,6 +18,10 @@ body{
     min-height: 100vh;
     height: 100%;
     overflow-x: hidden;
+}
+
+.bodyindex {
+    background-image: url('../img/background-hero-site.jpg');
 }
 
 /* Estilização da index.html */
