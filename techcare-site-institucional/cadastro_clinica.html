@@ -28,8 +28,8 @@
             </nav>
         </div>
         <div class="header_botoes">
-            <button class="botao_roxo">Marcar Consulta</button>
-            <button class="transparente botao">Cadastrar Clínica</button>
+            <a href="consulta_usuario.html" class="botao_roxo botao">Marcar Consulta</a>
+            <a href="cadastro_clinica.html" class="transparente botao">Cadastrar Clínica</a>
         </div>
     </header>
     <!-- header da página -->
@@ -43,8 +43,9 @@
                 <h1 class="form-title">Cadastro de Clínica</h1>
 
                 <div class="header_botoes_formulario">
-                    <button class="botao_roxo botao">Marcar Consulta</button>
-                    <button class="transparente botao">Cadastrar Clínica</button>
+
+                    <a href="consulta_usuario.html" class="botao_roxo botao">Marcar Consulta</a>
+                    <a href="cadastro_clinica.html" class="transparente botao">Cadastrar Clínica</a>
                 </div>
 
                 <form class="appointment-form" method="" id="form-clinica">
@@ -52,29 +53,42 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label for="nomeClinicaInputClinica">Nome da Clínica</label>
-                            <input type="text" id="nomeClinicaInputClinica" name="nomeClinicaInputClinica" placeholder="Digite o nome da Clínica">
+
+                            <input type="text" id="nomeClinicaInputClinica" name="nomeClinicaInputClinica"
+                                placeholder="Digite o nome da Clínica">
                         </div>
                         <div class="form-group">
                             <label for="cnpjInputClinica">CNPJ</label>
-                            <input type="text" id="cnpjInputClinica" name="cnpjInputClinica" placeholder="XX.XXX.XXX/XXXX-XX">
+                            <input type="text" id="cnpjInputClinica" name="cnpjInputClinica"
+                                placeholder="XX.XXX.XXX/XXXX-XX">
+
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-group">
                             <label for="enderecoInputClinica">Endereço</label>
-                            <input type="text" id="enderecoInputClinica" name="enderecoInputClinica" placeholder="Digite o endereço completo">
+
+                            <input type="text" id="enderecoInputClinica" name="enderecoInputClinica"
+                                placeholder="Digite o endereço completo">
                         </div>
                         <div class="form-group">
                             <label for="telefoneInputClinica">Telefone</label>
-                            <input type="text" id="telefoneInputClinica" name="telefoneInputClinica" placeholder="(00) 00000-0000">
+                            <input type="text" id="telefoneInputClinica" name="telefoneInputClinica"
+                                placeholder="(00) 00000-0000">
+
                         </div>
                         
                     </div>
 
+
+                    </div>
+
                     <div class="form-group">
                         <label for="emailInputClinica">E-mail</label>
-                        <input type="text" id="emailInputClinica" name="emailInputClinica" placeholder="Digite o e-mail da clínica">
+                        <input type="text" id="emailInputClinica" name="emailInputClinica"
+                            placeholder="Digite o e-mail da clínica">
+
                     </div>
 
                     <!-- Especialidades e Localização -->
@@ -156,7 +170,7 @@
         </div>
         <p class="copyright">© 2025 TechCare+. Todos os direitos reservados.</p>
     </footer>
-    
+
     <script src="assets/js/main.js"></script>
 </body>
 
