@@ -103,11 +103,11 @@
                 </div>
 
                 <div class="subdiv3_opcoes">
-                    <a href="">Para Pacientes</a>
-                    <a href="">Para Clínicas</a>
+                    <a href="#" id="patients-link" data-tab="patients">Para Pacientes</a>
+                    <a href="#" id="clinics-link" data-tab="clinics">Para Clínicas</a>
                 </div>
 
-                <div class="subdiv3_passo">
+                <div class="subdiv3_passo" id="patients-tab">
                     <div class="subdiv3_passo_elemento"><img src="assets/img/Numero 1.svg" alt="">
                         <p class="passo_elemento_titulo">Cadastre-se</p>
                         <p class="passo_elemento_desc">Crie sua conta informando seus dados básicos</p>
@@ -127,8 +127,31 @@
                         <p class="passo_elemento_titulo">Compareça</p>
                         <p class="passo_elemento_desc">Receba lembretes e não perca sua consulta</p>
                     </div>
-
                 </div>
+
+                <div class="subdiv3_passo" id="clinics-tab">
+                    <div class="subdiv3_passo_elemento"><img src="assets/img/Numero 1.svg" alt="">
+                        <p class="passo_elemento_titulo">Cadastre a clínica</p>
+                        <p class="passo_elemento_desc">Registre sua clínica na plataforma</p>
+                    </div>
+
+                    <div class="subdiv3_passo_elemento"><img src="assets/img/Numero 2.svg" alt="">
+                        <p class="passo_elemento_titulo">Configure sua agenda</p>
+                        <p class="passo_elemento_desc">Defina horários de funcionamento e disponibilidade</p>
+                    </div>
+
+                    <div class="subdiv3_passo_elemento"><img src="assets/img/Numero 3.svg" alt="">
+                        <p class="passo_elemento_titulo">Receba agendamentos</p>
+                        <p class="passo_elemento_desc">Pacientes agendam consultas diretamente pelo sistema</p>
+                    </div>
+
+                    <div class="subdiv3_passo_elemento"><img src="assets/img/Numero 4.svg" alt="">
+                        <p class="passo_elemento_titulo">Gerencie consultas</p>
+                        <p class="passo_elemento_desc">Acesse prontuários e histórico de pacientes</p>
+                    </div>
+                </div>
+
+
             </div>
 
             <div class="container1_subdiv4">
@@ -138,7 +161,9 @@
                 <div class="subdiv4_grid">
 
                     <div class="grid_element">
-                        <div class="grid_element_img"></div>
+                        <div class="grid_element_img">
+                            <img src="assets/img/icone-hospital.svg" alt="avaliações">
+                        </div>
                         <div class="grid_element_desc">
 
                             <h3>Clínica Saúde Total</h3>
@@ -155,15 +180,85 @@
                                 <button class="botao_claro">Cardiologia</button>
                                 <button class="botao_claro">Exames</button>
                             </div>
+                            <div class="avaliacoes_clinica"><img src="assets/img/icone_stars.svg" alt="avaliações">
+                            </div>
+
                         </div>
                         <button class="botao_roxo">Agendar Consulta</button>
                     </div>
-                    <div class="grid_element"></div>
-                    <div class="grid_element"></div>
-                    <div class="grid_element"></div>
+
+
+
+                    <div class="grid_element">
+                        <div class="grid_element_img">
+                            <img src="assets/img/icone-hospital.svg" alt="avaliações">
+                        </div>
+                        <div class="grid_element_desc">
+
+                            <h3>Clínica Saúde Total</h3>
+
+                            <p>Especializada em clínica geral e exames</p>
+
+                            <div class="grid_element_local">
+                                <img src="assets/img/icone-localizacao.svg" alt="">
+                                <p>Rua das Flores, 123 - Centro</p>
+                            </div>
+
+                            <div class="grid_element_buttons">
+                                <button class="botao_claro">Dermatologia</button>
+                                <button class="botao_claro">Cardiologia</button>
+                                <button class="botao_claro">Exames</button>
+                            </div>
+                            <div class="avaliacoes_clinica"><img src="assets/img/icone_stars.svg" alt="avaliações">
+                            </div>
+
+                        </div>
+                        <button class="botao_roxo">Agendar Consulta</button>
+                    </div>
+
+                    <div class="grid_element">
+                        <div class="grid_element_img">
+                            <img src="assets/img/icone-hospital.svg" alt="avaliações">
+                        </div>
+                        <div class="grid_element_desc">
+
+                            <h3>Clínica Saúde Total</h3>
+
+                            <p>Especializada em clínica geral e exames</p>
+
+                            <div class="grid_element_local">
+                                <img src="assets/img/icone-localizacao.svg" alt="">
+                                <p>Rua das Flores, 123 - Centro</p>
+                            </div>
+
+                            <div class="grid_element_buttons">
+                                <button class="botao_claro">Dermatologia</button>
+                                <button class="botao_claro">Cardiologia</button>
+                                <button class="botao_claro">Exames</button>
+                            </div>
+                            <div class="avaliacoes_clinica"><img src="assets/img/icone_stars.svg" alt="avaliações">
+                            </div>
+
+                        </div>
+                        <button class="botao_roxo">Agendar Consulta</button>
+                    </div>
 
 
                 </div>
+
+            </div>
+            <div class="container1_subdiv5">
+                <form method="POST" action="submit_form.php" id="frm-cta" class="formulario_email">
+                    <div class="container_email">
+                        <h1>Facilite o Dia a Dia da Sua Clínica</h1>
+                        <p>Com o TechCare+, organizar horários e atender pacientes fica mais simples e tranquilo.</p>
+                        <div class="container_email+botao">
+                            <input type="email" id="inputCta" name="txtmail" class="input-email" placeholder="E-mail">
+                            <button type="submit">Solicitar
+                                Mais Informações</button>
+                        </div>
+                    </div>
+                </form>
 
             </div>
         </div>
@@ -214,6 +309,62 @@
     </footer>
 
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const patientsTab = document.getElementById("patients-tab");
+        const clinicsTab = document.getElementById("clinics-tab");
+        const patientsLink = document.getElementById("patients-link");
+        const clinicsLink = document.getElementById("clinics-link");
 
+        // Função para alternar entre os conteúdos
+        function toggleTabs(activeTab) {
+            if (activeTab === "patients") {
+                patientsTab.style.display = "flex";
+                clinicsTab.style.display = "none";
+            } else if (activeTab === "clinics") {
+                patientsTab.style.display = "none";
+                clinicsTab.style.display = "flex";
+            }
+        }
+
+        // Eventos de clique
+        patientsLink.addEventListener("click", (e) => {
+            e.preventDefault();
+            toggleTabs("patients");
+        });
+
+        clinicsLink.addEventListener("click", (e) => {
+            e.preventDefault();
+            toggleTabs("clinics");
+        });
+
+        // Exibe o conteúdo inicial
+        toggleTabs("patients");
+    });
+    document.addEventListener("DOMContentLoaded", () => {
+        const links = document.querySelectorAll(".subdiv3_opcoes a");
+
+        links.forEach(link => {
+            link.addEventListener("click", (e) => {
+                e.preventDefault();
+
+                // Remove a classe 'active' de todos os links
+                links.forEach(l => l.classList.remove("active"));
+
+                // Adiciona a classe 'active' ao link clicado
+                link.classList.add("active");
+            });
+        });
+    });
+</script>
+<script src="assets/js/main.js">
+    const regexEmail = /^[\w.-]+@[A-Za-z]+\.[A-Za-z]{2,}(\.[A-Za-z]{2,})?$/;
+    const email = document.getElementById("email").value.trim();
+    if (!regexEmail.test(email)) {
+        alert("E-mail inválido!");
+        return false;
+    }
+    return true;
+</script>
 
 </html>
