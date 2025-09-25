@@ -15,18 +15,17 @@ if (frmCta) {
             vetorCta.push(valorInputCta);
             console.log(vetorCta);
             alert("Sucesso");
-            inputCta.value = "";
-            inputCta.value.focus();
             return false;
         }
     });
 }
 
+
 // --- Formulário Contato (contato.html) ---
 const formContato = document.getElementById("form-contato");
-const regexNomeContato = /^[A-Za-zÀ-ÖØ-öø-ÿ ]{3,}$/;
-const regexEmailContato = /^[\w.-]+@[A-Za-z]+\.[A-Za-z]{2,}(\.[A-Za-z]{2,})?$/;
-const regexTelefoneContato = /^\(?\d{2}\)?[\s]?\d{5}-?\d{4}$/;
+const regexNome = /^[A-Za-zÀ-ÖØ-öø-ÿ ]{3,}$/;
+const regexEmail = /^[\w.-]+@[A-Za-z]+\.[A-Za-z]{2,}(\.[A-Za-z]{2,})?$/;
+const regexTelefone = /^\(?\d{2}\)?[\s]?\d{5}-?\d{4}$/;
 const vetorContato = [];
 
 if (formContato) {
@@ -40,14 +39,15 @@ if (formContato) {
         let valorInputNomeContato = inputNomeContato.value;
         let valorInputEmailContato = inputEmailContato.value;
         let valorInputTelefoneContato = inputTelefoneContato.value;
+        let valorInputTextareaContato = inputTextareaContato.value;
 
-        if (!regexNomeContato.test(valorInputNomeContato)) {
+        if (!regexNome.test(valorInputNomeContato)) {
             alert("Nome inválido");
             return false;
-        } else if (!regexTelefoneContato.test(valorInputTelefoneContato)) {
+        } else if (!regexTelefone.test(valorInputTelefoneContato)) {
             alert("Telefone inválido");
             return false;
-        } else if (!regexEmailContato.test(valorInputEmailContato)) {
+        } else if (!regexEmail.test(valorInputEmailContato)) {
             alert("E-mail inválido");
             return false;
         } else {
@@ -159,44 +159,44 @@ const regexDataConsulta = /^\d{2}\/\d{2}\/\d{4}$/;
 const regexEmailConsulta = /^[\w.-]+@[A-Za-z]+\.[A-Za-z]{2,}(\.[A-Za-z]{2,})?$/;
 const vetorConsulta = [];
 
-if (formConsulta) {
-    formConsulta.addEventListener("submit", (e) => {
+if (formClinica) {
+    formClinica.addEventListener("submit", (e) => {
         e.preventDefault();
         
-        // Obter elementos dos campos
-        let inputNome = document.getElementById("nomeInputConsulta");
-        let inputTelefone = document.getElementById("telefoneInputConsulta");
-        let inputCPF = document.getElementById("cpfInputConsulta");
-        let inputData = document.getElementById("nascimentoInputConsulta");
-        let inputEmail = document.getElementById("emailInputConsulta");
-        let selectEspecialidade = document.getElementById("especialidadeInputConsulta");
-        let selectArea = document.getElementById("areaInputConsulta");
-        let selectMedico = document.getElementById("medicoInputConsulta");
+        // Obter elementos dos campos pelos IDs
+        let inputNomeClinica = document.getElementById("nomeClinicaInputClinica");
+        let inputCNPJ = document.getElementById("cnpjInputClinica");
+        let inputEndereco = document.getElementById("enderecoInputClinica");
+        let inputTelefone = document.getElementById("telefoneInputClinica");
+        let inputEmail = document.getElementById("emailInputClinica");
+        let selectEspecialidade = document.getElementById("especialidadeInputClinica");
+        let selectArea = document.getElementById("areaInputClinica");
+        let selectMedico = document.getElementById("medicoResponsavelInputClinica");
 
         // Obter valores
-        let valorNome = inputNome.value.trim();
+        let valorNomeClinica = inputNomeClinica.value.trim();
+        let valorCNPJ = inputCNPJ.value.trim();
+        let valorEndereco = inputEndereco.value.trim();
         let valorTelefone = inputTelefone.value.trim();
-        let valorCPF = inputCPF.value.trim();
-        let valorData = inputData.value.trim();
         let valorEmail = inputEmail.value.trim();
         let valorEspecialidade = selectEspecialidade.value;
         let valorArea = selectArea.value;
         let valorMedico = selectMedico.value;
 
         // Validações
-        if (!regexNomeConsulta.test(valorNome)) {
-            alert("Nome inválido. Deve conter pelo menos 3 caracteres alfabéticos.");
+        if (!regexNomeClinica.test(valorNomeClinica)) {
+            alert("Nome da clínica inválido. Deve conter pelo menos 3 caracteres.");
             return false;
-        } else if (!regexTelefoneConsulta.test(valorTelefone)) {
+        } else if (!regexCNPJClinica.test(valorCNPJ)) {
+            alert("CNPJ inválido. Use o formato XX.XXX.XXX/XXXX-XX");
+            return false;
+        } else if (!regexEnderecoClinica.test(valorEndereco)) {
+            alert("Endereço inválido. Deve conter pelo menos 5 caracteres.");
+            return false;
+        } else if (!regexTelefoneClinica.test(valorTelefone)) {
             alert("Telefone inválido. Use o formato (00) 00000-0000");
             return false;
-        } else if (!regexCPFConsulta.test(valorCPF)) {
-            alert("CPF inválido. Use o formato 000.000.000-00");
-            return false;
-        } else if (!regexDataConsulta.test(valorData)) {
-            alert("Data inválida. Use o formato DD/MM/AAAA");
-            return false;
-        } else if (!regexEmailConsulta.test(valorEmail)) {
+        } else if (!regexEmailClinica.test(valorEmail)) {
             alert("E-mail inválido");
             return false;
         } else if (valorEspecialidade === "") {
@@ -206,30 +206,29 @@ if (formConsulta) {
             alert("Selecione uma área geográfica");
             return false;
         } else if (valorMedico === "") {
-            alert("Selecione um médico");
+            alert("Selecione um médico responsável");
             return false;
         } else {
             // Sucesso - armazenar dados
-            vetorConsulta.push({
-                nome: valorNome,
+            vetorClinica.push({
+                nomeClinica: valorNomeClinica,
+                cnpj: valorCNPJ,
+                endereco: valorEndereco,
                 telefone: valorTelefone,
-                cpf: valorCPF,
-                dataNascimento: valorData,
                 email: valorEmail,
                 especialidade: valorEspecialidade,
                 area: valorArea,
-                medico: valorMedico
+                medicoResponsavel: valorMedico
             });
             
-            console.log(vetorConsulta);
-            alert("Consulta marcada com sucesso!");
+            console.log(vetorClinica);
+            alert("Clínica cadastrada com sucesso!");
             
-            // Limpar formulário (opcional)
-            formConsulta.reset();
+            // Limpar formulário
+            formClinica.reset();
             return false;
             
         }
     });
 }
-// --- Fim Formulário de Consulta ---
 

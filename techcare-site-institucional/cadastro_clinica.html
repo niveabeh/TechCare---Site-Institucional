@@ -29,9 +29,8 @@
         </div>
         <div class="header_botoes">
 
-            <a href="consulta_usuario.html"><button class="botao_roxo botao">Marcar Consulta</button></a>
-            <a href="cadastro_clinica.html"><button class="transparente botao">Cadastrar Clínica</button></a>
-
+            <a href="consulta_usuario.html" class="botao_roxo botao">Marcar Consulta</a>
+            <a href="cadastro_clinica.html" class="transparente botao">Cadastrar Clínica</a>
         </div>
     </header>
     <!-- header da página -->
@@ -80,7 +79,7 @@
                                 placeholder="(00) 00000-0000">
 
                         </div>
-                        
+
                     </div>
 
 
@@ -94,36 +93,23 @@
                     </div>
 
                     <!-- Especialidades e Localização -->
-                    <div class="form-group">
-                        <label for="especialidadeInputClinica">Especialidade Principal</label>
-                        <select id="especialidadeInputClinica" name="especialidadeInputClinica">
-                            <option value="">Selecione uma especialidade</option>
-                            <option value="clinica-geral">Clínica Geral ou Clínica Médica</option>
-                            <option value="cardiologia">Cardiologia</option>
-                            <option value="dermatologia">Dermatologia</option>
-                            <option value="neurologia">Neurologia</option>
-                        </select>
+                        <!-- Seção Cadastro de Médico com borda -->
+            <div class="secao-cadastro-medico">
+                <h3 class="titulo-secao">Cadastro de Médico</h3>
+                <div class="linha-formulario">
+                    <div class="grupo-formulario">
+                        <label for="nomeMedicoInput">Nome do Médico</label>
+                        <input type="text" id="nomeMedicoInput" name="nomeMedicoInput" placeholder="Nome do médico">
                     </div>
-
-                    <div class="form-group">
-                        <label for="areaInputClinica">Área Geográfica</label>
-                        <select id="areaInputClinica" name="areaInputClinica">
-                            <option value="">Selecione uma área</option>
-                            <option value="zona-norte">Zona Norte</option>
-                            <option value="zona-sul">Zona Sul</option>
-                            <option value="centro">Centro</option>
-                        </select>
+                    <div class="grupo-formulario">
+                        <label for="areaInput">Área</label>
+                        <input type="text" id="areaInput" name="areaInput" placeholder="Área que o médico Atua">
                     </div>
-
-                    <div class="form-group">
-                        <label for="medicoResponsavelInputClinica">Médico Responsável</label>
-                        <select id="medicoResponsavelInputClinica" name="medicoResponsavelInputClinica">
-                            <option value="">Selecione um médico responsável</option>
-                            <option value="dr-silva">Dr. João Silva</option>
-                            <option value="dra-santos">Dra. Maria Santos</option>
-                            <option value="dr-oliveira">Dr. Pedro Oliveira</option>
-                        </select>
+                    <div class="botao-adicionar">
+                        <button type="button" class="btn-adicionar">+</button>
                     </div>
+                </div>
+            </div>
 
                     <button type="submit" class="botao-fomulario">Cadastrar Clínica</button>
                 </form>
@@ -147,6 +133,7 @@
                 </div>
             </div>
             <div class="footer_section2">
+                
                 <div class="footer_desc">
                     <h1 class="footer_title2">Serviços</h1>
                     <a href="cadastro_clinica.html">Agendamento Online</a>
@@ -174,7 +161,6 @@
         </div>
         <p class="copyright">© 2025 TechCare+. Todos os direitos reservados.</p>
     </footer>
-    <!-- Footer da página -->
 
     <script src="assets/js/main.js"></script>
 </body>
