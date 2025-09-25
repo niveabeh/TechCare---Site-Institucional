@@ -1,14 +1,138 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="img/svg" href="assets/img/Logo-site-azul.svg">
+    <link rel="stylesheet" href="assets/css/header_footer.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>TechCare</title>
 </head>
+
 <body>
-    
-    <script src="assets/js/main.js"></script>
+   <header>
+        <div class="logo">
+            <a class="menu_button" href="index.html"><img src="assets/img/Logo-site-azul.svg" alt="TechCare"></a>
+            <div class="logo_desc">
+                <h1>TechCare</h1>
+                <h4>Agende fácil, cuide melhor.</h4>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <nav>
+                <a href="index.html">INÍCIO</a>
+                <a href="sobre.html">SOBRE</a>
+                <a href="contato.html">CONTATO</a>
+            </nav>
+        </div>
+        <div class="header_botoes">
+
+            <button class="botao_roxo botao">Marcar Consulta</button>
+            <button class="transparente botao">Cadastrar Clínica</button>
+
+        </div>
+    </header>
+    <!-- header da página -->
+
+    <section class="hero-pag-contato">
+    </section>
+
+    <section class="container-formulario-clinica">
+        <div class="container-contato-pai">
+            <div class="container-contato-esquerdo">
+                <div class="container-contato-texto">
+                    <h3>Precisa de ajuda? Conte conosco</h3>
+                    <h1>Você pode entrar em contato</h1>
+                    <p>caso tenha alguma dúvida</p>
+                </div>
+                <form class="container-formulario-contato" id="form-contato">
+                    <div class="container-linha-frm-contato">
+                        <div class="container-grupo-frm-contato">
+                            <label for="nome-frm-contato">Nome Completo</label>
+                            <input type="text" id="nome-frm-contato" name="nome-frm-contato" placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="container-grupo-frm-contato">
+                            <label for="telefone-frm-contato">Telefone</label>
+                            <input type="tel" id="telefone-frm-contato" name="telefone-frm-contato" placeholder="(00) 00000-0000">
+                        </div>
+                    </div>
+                    <div class="container-grupo-frm-contato">
+                        <label for="email-frm-contato">Email</label>
+                        <input type="text" id="email-frm-contato" name="email-frm-contato" placeholder="seuEmail@gmail.com">
+                    </div>
+                    <div class="container-grupo-frm-contato">
+                        <label for="mensagem-frm-contato">Mensagem</label>
+                        <textarea name="mensagem-frm-contato" id="mensagem-frm-contato" placeholder="Digite sua mensagem aqui"></textarea>
+                    </div>
+                    <button class="btn-contato-enviar" type="submit">Enviar</button>
+                </form>
+
+            </div>
+            <div class="container-contato-direito">
+                <div class="container-contato-informacoes-contato">
+                    <p>ENTRE EM CONTATO</p>
+                    <div class="container-contato-informacoes-filho">
+                        <img src="assets/img/tabler-icon-phone.svg" alt="">
+                        <p>(09) 40028-9220</p>
+                    </div>
+                    <div class="container-contato-informacoes-filho">
+                        <img src="assets/img/tabler-icon-mail.svg" alt="">
+                        <p>q6V9o@example.com</p>
+                    </div>
+                    <div class="container-contato-informacoes-filho">
+                        <img src="assets/img/map-pin.svg" alt="">
+                        <p>Unisenai - Rua Senai, 123, Joinville, SC</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer_subdiv1">
+
+            <div class="footer_element techcare_div">
+                <div class="footer_logo"><img src="./assets/img/Logo-site-branco.svg" alt="">
+                    <h1 class="footer_title">TechCare</h1>
+                </div>
+                <p>Simplificando o agendamento e a gestão de consultas para clínicas de pequeno porte.</p>
+                <div class="redes">
+                    <a href="#"><img src="./assets/img/icone-facebook-footer.svg" alt=""></a>
+                    <a href="#"><img src="./assets/img/icone-instagram-footer.svg" alt=""></a>
+                    <a href="#"><img src="./assets/img/icone-tiktok-footer.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer_section2">
+                <div class="footer_desc">
+                    <h1 class="footer_title2">Serviços</h1>
+                    <a href="#">Agendamento Online</a>
+                    <p>Gestão de Consultas</p>
+                    <p>Lembretes Automáticos</p>
+                    <p>Suporte e Treinamento</p>
+                </div>
+
+                <div class="footer_desc">
+                    <h1 class="footer_title2">Links Úteis</h1>
+                    <p>Termos e Condições</p>
+                    <p>Política de Privacidade</p>
+                    <p>Fale Conosco</p>
+
+                </div>
+
+                <div class="footer_desc">
+                    <h1 class="footer_title2">Localidade</h1>
+                    <p>Rua Senai, 123 – Joinville, SC</p>
+                    <p>(09) 40028-9220</p>
+                    <p>contato@techcareplus.com</p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">© 2025 TechCare+. Todos os direitos reservados.</p>
+    </footer>
+    <script src="assets/js/main.js" defer></script>
 </body>
+
 </html>
