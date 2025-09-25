@@ -28,8 +28,8 @@
             </nav>
         </div>
         <div class="header_botoes">
-            <button class="botao_roxo">Marcar Consulta</button>
-            <button class="transparente botao">Cadastrar Clínica</button>
+            <a href="consulta_usuario.html" class="botao_roxo botao">Marcar Consulta</a>
+            <a href="cadastro_clinica.html" class="transparente botao">Cadastrar Clínica</a>
         </div>
     </header>
     <!-- header da página -->
@@ -43,8 +43,10 @@
                 <h1 class="form-title">Marque A Sua Consulta</h1>
 
                 <div class="header_botoes_formulario">
-                    <button class="botao_roxo botao">Marcar Consulta</button>
-                    <button class="transparente botao">Cadastrar Clínica</button>
+
+                    <a href="consulta_usuario.html" class="botao_roxo botao">Marcar Consulta</a>
+                    <a href="cadastro_clinica.html" class="transparente botao">Cadastrar Clínica</a>
+
                 </div>
 
                 <form class="appointment-form" method="" id="form-consulta">
@@ -52,27 +54,38 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label for="nomeInputConsulta">Nome Completo</label>
-                            <input type="text" id="nomeInputConsulta" name="nomeInputConsulta" placeholder="Digite seu nome completo">
+
+                            <input type="text" id="nomeInputConsulta" name="nomeInputConsulta"
+                                placeholder="Digite seu nome completo">
                         </div>
                         <div class="form-group">
                             <label for="telefoneInputConsulta">Telefone</label>
-                            <input type="text" id="telefoneInputConsulta" name="telefoneInputConsulta" placeholder="(00) 00000-0000">
+                            <input type="text" id="telefoneInputConsulta" name="telefoneInputConsulta"
+                                placeholder="(00) 00000-0000">
+
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
                             <label for="cpfInputConsulta">CPF</label>
-                            <input type="text" id="cpfInputConsulta" name="cpfInputConsulta" placeholder="000.000.000-00">
+
+                            <input type="text" id="cpfInputConsulta" name="cpfInputConsulta"
+                                placeholder="000.000.000-00">
                         </div>
                         <div class="form-group">
                             <label for="nascimentoInputConsulta">Data de Nascimento</label>
-                            <input type="text" id="nascimentoInputConsulta" name="nascimentoInputConsulta" placeholder="DD/MM/AAAA">
+                            <input type="text" id="nascimentoInputConsulta" name="nascimentoInputConsulta"
+                                placeholder="DD/MM/AAAA">
+
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="emailInputConsulta">E-mail</label>
-                        <input type="text" id="emailInputConsulta" name="emailInputConsulta" placeholder="Digite seu e-mail">
+
+                        <input type="text" id="emailInputConsulta" name="emailInputConsulta"
+                            placeholder="Digite seu e-mail">
+
                     </div>
 
                     <!-- Dados da Consulta -->
@@ -154,7 +167,7 @@
         </div>
         <p class="copyright">© 2025 TechCare+. Todos os direitos reservados.</p>
     </footer>
-    
+
     <script src="assets/js/main.js"></script>
 </body>
 
